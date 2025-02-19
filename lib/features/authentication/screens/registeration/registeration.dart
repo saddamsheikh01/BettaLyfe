@@ -1,6 +1,6 @@
 import 'package:bettalyfa/features/authentication/screens/registeration/widgets/confirm_password_input.dart';
 import 'package:bettalyfa/features/authentication/screens/registeration/widgets/passowrd_input.dart';
-import 'package:bettalyfa/features/authentication/screens/registeration/widgets/phone_imput.dart';
+import 'package:bettalyfa/features/authentication/screens/registeration/widgets/phone_input.dart';
 import 'package:bettalyfa/features/authentication/screens/registeration/widgets/text_input.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -104,7 +104,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 controller: _lastNameController,
               ),
               const SizedBox(height: 20),
-              PhoneInputWidget(lableText: 'Phone Number', controller: _phoneNumberController,),
+              PhoneInputWidget(labelText: 'Phone Number', controller: _phoneNumberController,),
               const SizedBox(height: 20),
 
               TextInputWidget(
@@ -134,9 +134,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 ),
                 child: const Text(
                   "Register",
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,  // Set the text color to white
+                  ),
                 ),
               ),
+
               const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

@@ -30,6 +30,7 @@ dependencies:
   # Product Specific
   flutter_rating_bar: ^4.0.1
   capped_progress_indicator: ^0.0.2
+  pinput: ^3.0.0  # Use the latest version
 
 dev_dependencies:
   flutter_test:
